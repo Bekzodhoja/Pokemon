@@ -1,38 +1,61 @@
 .App {
   text-align: center;
+}body{
+  background-color: #011b29;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.themeText{
+  text-align: center;
+  background-color:  rgb(204, 247, 15);
+  margin: 0;
+  height: 80px;
+  color: #1b2901;
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchArea{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 30px;
+}
+.searchArea > input{
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  border: none;
+}
+input:focus{
+  box-shadow: rgba(206, 206, 206, 0.2) 10px 10px 24px!important;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.searchArea > button{
+  background-color: rgb(204, 247, 15);
+  color:#1b2901;
+  padding: 10px;
+  font-size: 25px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resultCard{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.resultCard > .card{
+  width: 400px;
+  height: 500px;
+  background: rgb(204, 247, 15);
+  margin: 20px 0 0 0;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 5px solid rgb(204, 247, 15) ;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+.card > img{
+  width: 60%;
 }
